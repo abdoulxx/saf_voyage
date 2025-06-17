@@ -51,9 +51,9 @@ try {
 }
 
 // Configuration de KkiaPay
-$kkiapay_public_key = '6d0d9ef01e0e11f0b28afb2ba2f61f55';
-$kkiapay_private_key = 'tpk_6d0dc6001e0e11f0b28afb2ba2f61f55';
-$kkiapay_secret = 'tsk_6d0dc6011e0e11f0b28afb2ba2f61f55';
+$kkiapay_public_key = 'votre clé ici ';
+$kkiapay_private_key = 'votre clé ici';
+$kkiapay_secret = 'votre clé ici';
 
 // Générer une référence unique pour le paiement
 $reference = "RES" . $reservation_id . "_" . time();
