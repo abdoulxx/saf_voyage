@@ -1,0 +1,72 @@
+    /* Section Features */
+    .feature-icon {
+        margin-bottom: 20px;
+    }
+    
+    .feature-image {
+        width: 250px; /* Ajustez la taille selon vos besoins */
+        height: 250px; /* Ajustez la taille selon vos besoins */
+        object-fit: contain; /* Pour garder les proportions de l'image */
+    }
+    
+    .feature-title {
+        font-family: 'PoppinsBold', sans-serif;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #343a40; /* Gris foncé pour le texte */
+    }
+    
+    .feature-description {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        color: #666;
+    }
+    
+    .features {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 50px 20px;
+        background-color: #f9f9f9; /* Couleur de fond pour contraster */
+        text-align: center;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .features {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .feature-item {
+            margin-bottom: 30px;
+        }
+    
+        .feature-image {
+            width: 80px;
+            height: 80px;
+        }
+        .feature-image {
+        width: 150px; /* Ajustez la taille selon vos besoins */
+        height: 150px; /* Ajustez la taille selon vos besoins */
+        object-fit: contain; /* Pour garder les proportions de l'image */
+    }
+    }
+    
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .features {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .feature-item {
+            margin-bottom: 30px;
+        }
+        .feature-image {
+        width: 150px; /* Ajustez la taille selon vos besoins */
+        height: 150px; /* Ajustez la taille selon vos besoins */
+        object-fit: contain; /* Pour garder les proportions de l'image */
+    }
+    }

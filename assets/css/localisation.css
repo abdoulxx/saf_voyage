@@ -1,0 +1,29 @@
+/* Section Localisation */
+.localisation {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.localisation .section-title {
+    font-family: 'PoppinsBold', sans-serif;
+    font-size: 2.5em;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Prend toute la largeur de la page */
+    margin: 40px 0;
+    /* Ajoute une marge en haut et en bas pour l'espacement */
+}
+
+.map-container iframe {
+    max-width: 100%;
+    /* S'assure que l'iframe ne dépasse pas la largeur de la page */
+    border: 0;
+}

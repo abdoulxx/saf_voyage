@@ -1,0 +1,52 @@
+/* Section Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0e168f; /* Couleur de fond jaune */
+    padding: 50px;
+    height: 80vh; /* Hauteur de la section */
+    position: relative;
+}
+
+
+
+.hero-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.hero-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 10px; /* Ajustement de la marge inférieure */
+        margin-top: 10px; /* Réduction de la marge supérieure pour rapprocher le texte de l'image */
+    }
+
+    .hero-title {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        margin-top: 10px; /* Réduction de la marge supérieure */
+    }
+}

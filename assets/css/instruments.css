@@ -1,0 +1,154 @@
+  /* Titre de la section */
+  .section-title {
+    font-family: 'PoppinsBold', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+
+
+/* Section Nos Instruments */
+.nos-instruments {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteneur des cartes d'instruments */
+.instrument-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limite la largeur totale du conteneur */
+}
+
+/* Carte d'un instrument */
+.instrument-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.instrument-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image de l'instrument */
+.instrument-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Détails de l'instrument */
+.instrument-details {
+    padding: 20px;
+}
+
+/* Nom de l'instrument */
+.instrument-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+/* Description de l'instrument */
+.instrument-description {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1em;
+}
+
+/* Prix de l'instrument */
+.instrument-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.instrument-image {
+    width: 100%;
+    height: 250px; /* Hauteur fixe pour toutes les images */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.instrument-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit le conteneur tout en conservant son ratio */
+    border-radius: 10px;
+}
+/* Actions (Voir plus) */
+.instrument-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #ffcc33;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #e6b800;
+}
+/* Image de l'instrument avec taille fixe */
+.instrument-image {
+    width: 100%;
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.instrument-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit le conteneur tout en conservant son ratio */
+    border-radius: 10px;
+}
+
+
+/* Media Query pour les écrans plus larges */
+@media (min-width: 768px) {
+    .instrument-card-container {
+        flex-direction: row; /* Aligner les cartes côte à côte */
+        justify-content: space-evenly; /* Assurez-vous que les cartes sont bien espacées */
+    }
+
+    .instrument-card {
+        width: calc(33.33% - 40px); /* Réduire la largeur des cartes pour qu'elles tiennent sur une ligne */
+    }
+}
+
+/* Media Query pour les petits écrans (mobiles) */
+@media (max-width: 767px) {
+    .instrument-card-container {
+        flex-direction: column; /* Les cartes s'empilent */
+        align-items: center;
+    }
+
+    .instrument-card {
+        width: 100%; /* Cartes prennent toute la largeur */
+        max-width: 300px; /* Limite la largeur maximale */
+    }
+}

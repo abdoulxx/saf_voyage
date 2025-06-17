@@ -1,0 +1,44 @@
+   /* Titre de la section */
+   .section-title {
+    font-family: 'PoppinsBold', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+/* Section Témoignages */
+.temoignages {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-inner {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.temoignage {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.temoignage-text {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.temoignage-client {
+    font-size: 1em;
+    font-weight: bold;
+    color: #343a40;
+}
